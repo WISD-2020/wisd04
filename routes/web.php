@@ -21,6 +21,10 @@ Route::get('/aa/a1', function () {
     return view('aa.a1');
 });
 
+Route::get('/aa/a2', function () {
+    return view('aa.a2');
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
